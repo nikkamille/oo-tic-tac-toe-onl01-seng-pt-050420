@@ -64,13 +64,17 @@ class TicTacToe
     WIN_COMBINATIONS.any? do |combo|
       if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
         return combo
+<<<<<<< HEAD
       end
+=======
+>>>>>>> 233734a0fae4cea34c2b4a9bd22bdc2ed609dfd6
     end
   end
   
   def full?
     @board.all?{|token| token == "X" || token == "O"}
   end
+<<<<<<< HEAD
   
   def draw?
     !won? && full?
@@ -91,4 +95,10 @@ class TicTacToe
     puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
   end
 
+=======
+    
+  end
+  
+  
+>>>>>>> 233734a0fae4cea34c2b4a9bd22bdc2ed609dfd6
 end
